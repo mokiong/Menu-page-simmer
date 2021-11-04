@@ -1,9 +1,9 @@
 html {
-    font-size: 62.5%;
+    font-size: 50%;
 }
 
 body {
-    --global-padding: 20rem;
+    --global-padding: 15rem;
 
     --text-small: 1.2rem;
     --text-medium: 1.8rem;
