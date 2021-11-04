@@ -1,0 +1,100 @@
+.container {
+    background-color: var(--simmer-yellow);
+    padding: 10rem var(--global-padding);
+}
+
+.header {
+    font-size: var(--header-medium);
+    font-style: italic;
+}
+
+.product {
+    margin-top: 6rem;
+
+    height: 22.5rem;
+    border: 2px solid black;
+    border-radius: 20px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    overflow: hidden;
+}
+
+.content {
+    grid-column: 1 / 3;
+    padding: 0px 7rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contentHeader {
+    font-size: var(--header-small);
+    font-style: italic;
+    margin-bottom: 1.5rem;
+
+    display: flex;
+}
+
+.headerSpan {
+    margin-left: 3rem;
+}
+
+.description {
+    font-weight: bold;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.btn {
+    grid-column: 3 / 4;
+
+    font-size: var(--text-xl);
+    font-family: 'Nord';
+    font-weight: bold;
+
+    background-color: var(--simmer-yellow);
+    color: var(--simmer-black);
+
+    border: 0px;
+    outline: none;
+    border-left: 2px solid black;
+}
+
+.menuFooter {
+    text-align: center;
+    margin: 7rem 2rem;
+    margin-bottom: 0px;
+}
+
+.footerBtn {
+    font-size: 4rem;
+    font-family: 'Nord';
+    font-weight: bold;
+
+    letter-spacing: 3px;
+    padding: 3rem 8rem;
+
+    background-color: var(--simmer-white);
+    color: var(--simmer-black);
+
+    border: 2px solid black;
+    outline: none;
+    border-radius: 10px;
+
+    margin-bottom: 5rem;
+}
+
+.footerParag {
+    margin-top: 2rem;
+    font-family: 'Nord';
+    font-weight: bold;
+}
+
+.description a {
+    color: black;
+}

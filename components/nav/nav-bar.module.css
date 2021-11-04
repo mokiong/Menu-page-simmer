@@ -1,0 +1,61 @@
+.nav {
+    background-color: #000000;
+    color: var(--simmer-white);
+    font-family: 'Nord';
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 3rem;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+
+    grid-column: 1 / span 2;
+    margin-right: auto;
+}
+
+.nav li {
+    font-size: var(--text-medium);
+}
+
+.nav li:not(:last-child) {
+    margin-right: 1.6rem;
+}
+
+.logo {
+    font-size: var(--text-large);
+    letter-spacing: -0.5px;
+
+    font-family: 'Nord';
+
+    justify-self: center;
+    grid-column: 3 / span 2;
+    transform: scaleY(1.4);
+}
+
+.navItem {
+    grid-column: 5 / span 2;
+
+    display: flex;
+    margin-left: auto;
+}
+
+.btn {
+    padding: 6px 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--simmer-yellow);
+    margin-right: 1.6rem;
+
+    font-family: inherit;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.icon {
+}
