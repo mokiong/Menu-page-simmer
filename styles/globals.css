@@ -25,12 +25,20 @@ body {
 
 @media only screen and (max-width: 25em) {
     html {
+        font-size: 43.75%;
+    }
+}
+
+@media only screen and (max-width: 25em) {
+    html {
         font-size: 37.5%;
     }
 
     body {
         --global-padding: 4rem;
         --header-large: 6rem;
+        --text-xl: 2rem;
+        --text-xxl: 3rem;
     }
 }
 

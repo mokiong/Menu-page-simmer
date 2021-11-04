@@ -1,11 +1,9 @@
 .productsLayout {
-    padding: 0px var(--global-padding);
+    padding: var(--global-padding);
     padding-bottom: 0px;
 }
 
 .container {
-    padding-top: var(--global-padding);
-
     font-family: 'BeVietnamPro';
     display: grid;
     grid-template-rows: repeat(2, 1fr) min-content;
@@ -32,12 +30,12 @@
     font-size: var(--text-xxl);
 }
 
-.list ul {
-    list-style: none;
+.list li:not(:last-child) {
+    margin-bottom: 0.8rem;
 }
 
-.list li:not(:last-child) {
-    margin-bottom: 8px;
+.list ul {
+    list-style: none;
 }
 
 .description {
@@ -79,7 +77,7 @@
 .btnBuy {
     margin-top: 8rem;
     grid-column: 1 / -1;
-    padding: 4rem 0rem;
+    padding: 4rem;
 }
 
 .btn:hover {
@@ -88,7 +86,7 @@
 
 .sectionTwo {
     font-family: 'BeVietnamPro';
-    margin-top: 13rem;
+    margin-top: 10rem;
 }
 
 .gridTwo {
@@ -112,7 +110,7 @@
 }
 
 .productName {
-    font-size: 3rem;
+    font-size: var(--text-xl);
     font-family: 'BeVietnamPro';
     font-weight: bold;
     padding: 2rem;
@@ -134,9 +132,38 @@
 @media only screen and (max-width: 25em) {
     .header {
         padding-right: 0px;
+        line-height: 5rem;
+    }
+
+    .container {
+        grid-template-rows: repeat(3, min-content) min-content;
+        padding-top: var(--global-padding);
+        gap: 5rem;
+    }
+
+    .description {
+        font-family: inherit;
+        font-size: var(--text-large);
+        font-weight: bold;
+
+        /* align-items: flex-start; */
+
+        line-height: 2.5rem;
+        padding: 0px;
+    }
+
+    .btnBuy {
+        margin-top: 4rem;
+        padding: 3rem;
     }
 
     .gridTwo {
         grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+
+    .productBtn {
+        padding: 1rem;
+        font-weight: normal;
     }
 }

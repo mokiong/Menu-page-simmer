@@ -11,7 +11,7 @@ const Specialty: NextPage = () => {
                 <div className={classes.product}>
                     <div className={classes.content}>
                         <div className={classes.contentHeader}>
-                            Full Course
+                            <p>Full Course</p>
                             <span className={classes.headerSpan}>
                                 <Star size="8rem" />
                             </span>
