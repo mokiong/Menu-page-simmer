@@ -23,6 +23,16 @@ body {
     --simmer-black: #000000;
 }
 
+@media only screen and (max-width: 25em) {
+    html {
+        font-size: 25%;
+    }
+
+    body {
+        --global-padding: 6rem;
+    }
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
