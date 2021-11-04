@@ -4,7 +4,7 @@ import { BsCart3 } from 'react-icons/bs';
 
 const Cart: NextPage = () => {
     return (
-        <IconContext.Provider value={{ color: '#f7ede1', size: '30px' }}>
+        <IconContext.Provider value={{ color: '#f7ede1', size: '3rem' }}>
             <div>
                 <BsCart3 />
             </div>

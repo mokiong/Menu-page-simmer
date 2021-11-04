@@ -5,6 +5,8 @@
     overflow: hidden;
     display: flex;
 
+    padding: 0px var(--global-padding);
+    padding-bottom: 0px;
     flex-direction: column;
 }
 
@@ -13,8 +15,9 @@
     align-items: center;
     height: 75%;
 
-    margin: 0px 2.5rem;
+    padding: 0px 5rem;
 
+    margin: 0px 2.5rem;
     text-align: center;
 }
 
@@ -36,10 +39,9 @@
     height: 25%;
     display: grid;
 
-    grid-template-columns: repeat(3, 33%);
+    grid-template-columns: repeat(3, 1fr);
     gap: 4rem;
     align-items: flex-end;
-    padding: 0px var(--global-padding);
 }
 
 .btn {
@@ -50,10 +52,12 @@
     padding: 2.5rem 2rem;
     background-color: black;
     width: 100%;
+    border: none;
 
+    border: solid;
     border-color: var(--simmer-white);
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
     border-bottom: 1px;
 }
 
@@ -62,4 +66,33 @@
     cursor: pointer;
     background-color: var(--simmer-white);
     color: var(--simmer-black);
+}
+
+@media only screen and (max-width: 25em) {
+    .container {
+        height: 30rem;
+        padding: 0.5rem;
+        padding-bottom: 0px;
+    }
+
+    .headerText {
+        height: 50%;
+    }
+
+    .tabs {
+        height: 50%;
+        gap: 1.5rem;
+        padding: 0px 2rem;
+    }
+
+    .btn {
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        border-bottom: none;
+        border-width: 1px;
+
+        padding: 1rem;
+        font-weight: bold;
+        font-size: 12px;
+    }
 }
