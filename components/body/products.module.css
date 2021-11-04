@@ -66,6 +66,8 @@
     font-family: 'Nord';
     font-weight: bold;
 
+    padding: 2rem;
+
     background-color: var(--simmer-black);
     color: var(--simmer-white);
 
@@ -114,6 +116,7 @@
     font-size: 3rem;
     font-family: 'BeVietnamPro';
     font-weight: bold;
+    padding: 2rem;
 
     text-transform: uppercase;
     display: flex;
