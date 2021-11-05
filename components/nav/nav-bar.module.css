@@ -28,14 +28,14 @@
 }
 
 .logo {
-    font-size: var(--text-large);
-    letter-spacing: -0.5px;
+    font-size: var(--header-xs);
+    letter-spacing: 0.3rem;
 
-    font-family: 'Nord';
+    font-family: 'Rockids';
 
     justify-self: center;
     grid-column: 3 / span 2;
-    transform: scaleY(1.4);
+    transform: scaleY(1.2);
 }
 
 .navItem {

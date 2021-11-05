@@ -87,3 +87,11 @@ body {
     font-weight: bold;
     font-display: block;
 }
+
+@font-face {
+    font-family: 'Rockids';
+    src: url('/fonts/Rockids/Rockids-regular.otf');
+    font-style: normal;
+    font-weight: normal;
+    font-display: block;
+}

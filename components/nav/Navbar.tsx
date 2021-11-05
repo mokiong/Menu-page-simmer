@@ -6,6 +6,7 @@ import classes from './nav-bar.module.css';
 const Navbar: NextPage = () => {
     return (
         <div className={classes.nav}>
+            <div className={classes.navMobile}></div>
             <ul>
                 <li>HOME</li>
                 <li>WORKS + ABOUT</li>

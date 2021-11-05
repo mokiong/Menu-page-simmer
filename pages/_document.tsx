@@ -35,6 +35,12 @@ const Preload: FC = () => {
                 as="font"
                 crossOrigin="anonymous"
             />
+            <link
+                rel="preload"
+                href="/fonts/Rockids/Rockids-regular.otf"
+                as="font"
+                crossOrigin="anonymous"
+            />
         </Head>
     );
 };
