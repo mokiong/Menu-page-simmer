@@ -1,10 +1,13 @@
 import type { NextPage } from 'next';
+import { useState } from 'react';
 import { RiArrowDownSFill } from 'react-icons/ri';
 import DownArrow from '../Icon/DownArrow';
 
 import classes from './header.module.css';
 
 const MenuHeader: NextPage = () => {
+    const [chosenCourse, setChosenCourse] = useState<string>('appetizers');
+
     return (
         <div className={classes.container}>
             <div className={classes.headerContainer}>
@@ -15,21 +18,48 @@ const MenuHeader: NextPage = () => {
             <div className={classes.tabs}>
                 <div className={classes.tabContainer}>
                     <div className={classes.icon}>
-                        <DownArrow color="#f89811" size="3rem" />
+                        {chosenCourse === 'appetizers' && (
+                            <DownArrow color="#f89811" size="3rem" />
+                        )}
                     </div>
-                    <button className={classes.btn}>APPETIZERS</button>
+                    <button
+                        onClick={() => {
+                            setChosenCourse('appetizers');
+                        }}
+                        className={classes.btn}
+                    >
+                        APPETIZERS
+                    </button>
                 </div>
                 <div className={classes.tabContainer}>
                     <div className={classes.icon}>
-                        <DownArrow color="#f89811" size="3rem" />
+                        {chosenCourse === 'main' && (
+                            <DownArrow color="#f89811" size="3rem" />
+                        )}
                     </div>
-                    <button className={classes.btn}>MAIN COURSE</button>
+                    <button
+                        onClick={() => {
+                            setChosenCourse('main');
+                        }}
+                        className={classes.btn}
+                    >
+                        MAIN COURSE
+                    </button>
                 </div>
                 <div className={classes.tabContainer}>
                     <div className={classes.icon}>
-                        <DownArrow color="#f89811" size="3rem" />
+                        {chosenCourse === 'dessert' && (
+                            <DownArrow color="#f89811" size="3rem" />
+                        )}
                     </div>
-                    <button className={classes.btn}>DESSERT</button>
+                    <button
+                        onClick={() => {
+                            setChosenCourse('dessert');
+                        }}
+                        className={classes.btn}
+                    >
+                        DESSERT
+                    </button>
                 </div>
             </div>
         </div>
