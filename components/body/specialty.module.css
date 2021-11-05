@@ -32,8 +32,8 @@
 }
 
 .contentHeader {
-    font-size: var(--header-small);
-    font-style: italic;
+    font-size: var(--header-medium);
+    font-family: 'Baskerville';
     margin-bottom: 1.5rem;
 
     display: flex;
