@@ -67,6 +67,11 @@
     border-bottom: 0.1rem;
 }
 
+.activeBtn {
+    background-color: var(--simmer-white);
+    color: var(--simmer-black);
+}
+
 .btn:focus,
 .btn:hover {
     cursor: pointer;

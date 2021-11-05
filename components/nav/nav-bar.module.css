@@ -20,11 +20,15 @@
 }
 
 .nav li {
-    font-size: var(--text-medium);
+    font-size: var(--text-large);
 }
 
 .nav li:not(:last-child) {
     margin-right: 1.6rem;
+}
+
+.navItemMobile {
+    display: none;
 }
 
 .logo {
@@ -55,4 +59,41 @@
     font-family: inherit;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+@media only screen and (max-width: 43.5em) {
+    .nav {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 4rem;
+        justify-content: start;
+    }
+
+    .nav ul {
+        display: none;
+    }
+
+    .logo {
+        font-size: var(--header-small);
+        justify-self: start;
+        grid-column: 1 / 2;
+    }
+
+    .navItem {
+        grid-column: 2 / 3;
+    }
+
+    .navItem {
+        display: none;
+    }
+
+    .navItemMobile {
+        grid-column: 5 / span 2;
+
+        display: flex;
+        margin-left: auto;
+    }
+
+    .hamburgerIcon {
+        margin-right: 3rem;
+    }
 }

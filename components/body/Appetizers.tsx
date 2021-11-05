@@ -2,7 +2,7 @@ import { NextPage } from 'next';
 
 import classes from './products.module.css';
 
-const Products: NextPage = () => {
+const Appetizers: NextPage = () => {
     return (
         <div className={classes.productsLayout}>
             <section className={classes.container}>
@@ -156,9 +156,8 @@ const Products: NextPage = () => {
                     </div>
                 </div>
             </section>
-            <section></section>
         </div>
     );
 };
 
-export default Products;
+export default Appetizers;
