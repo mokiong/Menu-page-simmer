@@ -15,19 +15,19 @@ const MenuHeader: NextPage = () => {
             <div className={classes.tabs}>
                 <div className={classes.tabContainer}>
                     <div className={classes.icon}>
-                        <DownArrow />
+                        <DownArrow color="#f89811" size="3rem" />
                     </div>
                     <button className={classes.btn}>APPETIZERS</button>
                 </div>
                 <div className={classes.tabContainer}>
                     <div className={classes.icon}>
-                        <DownArrow />
+                        <DownArrow color="#f89811" size="3rem" />
                     </div>
                     <button className={classes.btn}>MAIN COURSE</button>
                 </div>
                 <div className={classes.tabContainer}>
                     <div className={classes.icon}>
-                        <DownArrow />
+                        <DownArrow color="#f89811" size="3rem" />
                     </div>
                     <button className={classes.btn}>DESSERT</button>
                 </div>

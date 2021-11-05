@@ -1,4 +1,11 @@
-const DownArrow = () => {
+import { NextPage } from 'next';
+
+interface downArrowInterface {
+    size: string;
+    color: string;
+}
+
+const DownArrow: NextPage<downArrowInterface> = ({ color, size }) => {
     return (
         <svg
             version="1.1"
@@ -8,7 +15,7 @@ const DownArrow = () => {
             x="0px"
             y="0px"
             viewBox="0 0 49.33 36.36"
-            style={{ fill: '#f89811' }}
+            style={{ fill: color, width: size }}
             xmlSpace="preserve"
             fill="white"
         >

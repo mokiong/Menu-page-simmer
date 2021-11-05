@@ -12,13 +12,17 @@ const Specialty: NextPage = () => {
                     <div className={classes.content}>
                         <div className={classes.contentHeader}>
                             <p>Full Course</p>
-                            <span className={classes.headerSpan}>
-                                <Star size="8rem" />
+                            <span className={classes.icon}>
+                                <Star size="8rem" color="black" />
                             </span>
                         </div>
+
                         <div className={classes.description}>
                             includes appetizers, main course, and desserts
                         </div>
+                        <span className={classes.iconMobile}>
+                            <Star size="8rem" color="black" />
+                        </span>
                     </div>
                     <button className={classes.btn}>add to cart</button>
                 </div>
