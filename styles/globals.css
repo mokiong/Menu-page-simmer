@@ -25,12 +25,6 @@ body {
 
 @media only screen and (max-width: 25em) {
     html {
-        font-size: 43.75%;
-    }
-}
-
-@media only screen and (max-width: 25em) {
-    html {
         font-size: 37.5%;
     }
 
@@ -39,6 +33,12 @@ body {
         --header-large: 8rem;
         --text-xl: 2rem;
         --text-xxl: 3rem;
+    }
+}
+
+@media screen and (min-width: 100em) and (max-width: 120em) {
+    html {
+        font-size: 75%;
     }
 }
 
