@@ -6,8 +6,10 @@ import classes from './header.module.css';
 const MenuHeader: NextPage = () => {
     return (
         <div className={classes.container}>
-            <div className={classes.headerText}>
-                <h1>Tell us what you&apos;re craving</h1>
+            <div className={classes.headerContainer}>
+                <h1 className={classes.headerText}>
+                    Tell us what you&apos;re craving
+                </h1>
             </div>
             <div className={classes.tabs}>
                 <div className={classes.tabContainer}>

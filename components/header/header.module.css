@@ -10,7 +10,7 @@
     flex-direction: column;
 }
 
-.headerText {
+.headerContainer {
     display: flex;
     align-items: center;
     height: 75%;
@@ -20,8 +20,7 @@
     text-align: center;
 }
 
-.headerText h1 {
-    margin: 0px auto;
+.headerText {
     color: var(--simmer-white);
     font-size: var(--header-large);
 }
@@ -76,8 +75,12 @@
         padding-bottom: 0px;
     }
 
-    .headerText {
+    .headerContainer {
         height: 50%;
+    }
+
+    .headerText {
+        font-size: 6rem;
     }
 
     .tabs {

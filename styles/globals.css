@@ -36,7 +36,7 @@ body {
 
     body {
         --global-padding: 4rem;
-        --header-large: 6rem;
+        --header-large: 8rem;
         --text-xl: 2rem;
         --text-xxl: 3rem;
     }
