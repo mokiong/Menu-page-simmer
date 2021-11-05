@@ -19,7 +19,7 @@
 
 .ratesHeader {
     font-size: var(--text-large);
-    letter-spacing: 2px;
+    letter-spacing: 0.2rem;
 
     display: flex;
     justify-content: flex-end;
@@ -71,7 +71,7 @@
 
     border: none;
     outline: none;
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 
 .btnBuy {
@@ -100,8 +100,8 @@
 }
 
 .product {
-    border: 2px solid black;
-    border-radius: 10px;
+    border: 0.2rem solid black;
+    border-radius: 1rem;
     overflow: hidden;
 
     display: grid;
@@ -163,7 +163,7 @@
     }
 
     .productBtn {
-        padding: 1rem;
+        padding: 2rem;
         font-weight: normal;
     }
 }
