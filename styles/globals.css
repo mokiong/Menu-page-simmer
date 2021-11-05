@@ -23,7 +23,7 @@ body {
     --simmer-black: #000000;
 }
 
-@media only screen and (max-width: 25em) {
+@media only screen and (max-width: 37.5em) {
     html {
         font-size: 37.5%;
     }

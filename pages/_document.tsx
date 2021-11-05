@@ -31,7 +31,7 @@ const Preload: FC = () => {
             />
             <link
                 rel="preload"
-                href="/fonts/Baskerville/Baskerville-SemiBold.ttf"
+                href="/fonts/Baskerville/Baskerville-SemiBoldItalic.ttf"
                 as="font"
                 crossOrigin="anonymous"
             />
