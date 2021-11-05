@@ -12,9 +12,9 @@
 
 .header {
     font-size: var(--header-large);
-    font-style: italic;
-    line-height: 9rem;
+    font-family: 'Baskerville';
     padding-right: 8rem;
+    line-height: 8rem;
 }
 
 .ratesHeader {

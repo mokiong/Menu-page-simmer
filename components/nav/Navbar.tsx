@@ -1,7 +1,7 @@
 import { NextPage } from 'next';
+import { BsCart3 } from 'react-icons/bs';
 
 import classes from './nav-bar.module.css';
-import Cart from '../Icon/Cart';
 
 const Navbar: NextPage = () => {
     return (
@@ -14,7 +14,7 @@ const Navbar: NextPage = () => {
             <div className={classes.logo}>SIMMER STUDIOS</div>
             <div className={classes.navItem}>
                 <button className={classes.btn}>Get a quote</button>
-                <Cart />
+                <BsCart3 color="#f7ede1" size="3rem" />
             </div>
         </div>
     );

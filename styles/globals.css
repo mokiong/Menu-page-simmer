@@ -14,7 +14,7 @@ body {
     --header-xs: 3.2rem;
     --header-small: 4.8rem;
     --header-medium: 6.4rem;
-    --header-large: 8rem;
+    --header-large: 10rem;
 
     --simmer-yellow: #fa9a11;
     --simmer-red: #be3111;
@@ -75,6 +75,14 @@ body {
 @font-face {
     font-family: 'Nord';
     src: url('/fonts/Nord/Nord-Bold.ttf');
+    font-style: normal;
+    font-weight: bold;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Baskerville';
+    src: url('/fonts/Baskerville/Baskerville-SemiBoldItalic.ttf');
     font-style: normal;
     font-weight: bold;
     font-display: block;

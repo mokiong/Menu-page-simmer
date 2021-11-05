@@ -29,6 +29,12 @@ const Preload: FC = () => {
                 as="font"
                 crossOrigin="anonymous"
             />
+            <link
+                rel="preload"
+                href="/fonts/Baskerville/Baskerville-SemiBold.ttf"
+                as="font"
+                crossOrigin="anonymous"
+            />
         </Head>
     );
 };

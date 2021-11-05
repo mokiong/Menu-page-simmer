@@ -38,7 +38,7 @@ const Products: NextPage = () => {
                 </button>
             </section>
             <section className={classes.sectionTwo}>
-                <div className={classes.header}>Ala Carte</div>
+                <div className={classes.header}>A la Carte</div>
                 <div className={classes.gridTwo}>
                     <div className={classes.product}>
                         <span className={classes.productName}>
