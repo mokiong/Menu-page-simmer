@@ -13,10 +13,10 @@
 .headerContainer {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 75%;
 
     padding: 0px 4rem;
-
     text-align: center;
 }
 

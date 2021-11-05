@@ -30,9 +30,6 @@ const Specialty: NextPage = () => {
                     <div className={classes.content}>
                         <div className={classes.contentHeader}>
                             Chef’s Choice
-                            {/* <span className={classes.headerSpan}>
-                            <Star size="8rem" />
-                        </span> */}
                         </div>
                         <div className={classes.description}>
                             CAN’T DECIDE? TALK TO US.
