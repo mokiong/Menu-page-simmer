@@ -1,10 +1,20 @@
 import { NextPage } from 'next';
+import { useState } from 'react';
 import { BsCart3 } from 'react-icons/bs';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { VscChromeClose } from 'react-icons/vsc';
 
+import NavBarMenu from './NavbarMenu';
+import navMenuClasses from './nav-bar-menu.module.css';
 import classes from './nav-bar.module.css';
 
 const Navbar: NextPage = () => {
+    const [showNavBarMenu, setShowNavBarMenu] = useState(false);
+
+    function navbarMenuHandler() {
+        setShowNavBarMenu(!showNavBarMenu);
+    }
+
     return (
         <div className={classes.nav}>
             <div className={classes.navMobile}></div>
@@ -19,8 +29,51 @@ const Navbar: NextPage = () => {
                 <BsCart3 color="#f7ede1" size="3rem" />
             </div>
             <div className={classes.navItemMobile}>
-                <div className={classes.hamburgerIcon}>
-                    <GiHamburgerMenu size="6rem" />
+                <div>
+                    <button
+                        className={classes.hamburgerIcon}
+                        onClick={navbarMenuHandler}
+                    >
+                        <GiHamburgerMenu size="6rem" />
+                    </button>
+                    {showNavBarMenu && (
+                        <NavBarMenu>
+                            <div className={navMenuClasses.overlay}>
+                                <div className={navMenuClasses.container}>
+                                    <div
+                                        className={navMenuClasses.btnContainer}
+                                    >
+                                        <button
+                                            className={navMenuClasses.closeBtn}
+                                            onClick={navbarMenuHandler}
+                                        >
+                                            <VscChromeClose size="8rem" />
+                                        </button>
+                                    </div>
+                                    <div className={navMenuClasses.menu}>
+                                        <ul>
+                                            <li>HOME</li>
+                                            <li>WORKS + ABOUT</li>
+                                            <li>MENU</li>
+                                        </ul>
+                                        <div
+                                            className={
+                                                navMenuClasses.quoteBtnContainer
+                                            }
+                                        >
+                                            <button
+                                                className={
+                                                    navMenuClasses.quoteBtn
+                                                }
+                                            >
+                                                Get a quote
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </NavBarMenu>
+                    )}
                 </div>
                 <BsCart3 color="#f7ede1" size="6rem" />
             </div>

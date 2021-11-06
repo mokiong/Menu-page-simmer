@@ -52,6 +52,7 @@ class MyDocument extends Document {
                 <Preload />
                 <body>
                     <Main />
+                    <div id="nav-menu" />
                     <NextScript />
                 </body>
             </Html>

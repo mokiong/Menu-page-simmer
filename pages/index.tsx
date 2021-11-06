@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 
 import Specialty from '../components/body/Specialty';
-import MenuHeader from '../components/header/Header';
+import MenuHeader from '../components/header/ManuHeader';
 
 const Home: NextPage = () => {
     return (
