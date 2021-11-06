@@ -36,11 +36,11 @@ body {
     }
 }
 
-@media screen and (min-width: 100em) and (max-width: 120em) {
+/* @media screen and (min-width: 100em) and (max-width: 120em) {
     html {
         font-size: 75%;
     }
-}
+} */
 
 * {
     box-sizing: border-box;
