@@ -20,11 +20,12 @@
 }
 
 .nav li {
+    font-weight: bold;
     font-size: var(--text-large);
 }
 
 .nav li:not(:last-child) {
-    margin-right: 1.6rem;
+    margin-right: 4rem;
 }
 
 .navItemMobile {
