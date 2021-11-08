@@ -6,7 +6,7 @@ interface TabsInterface {
     menu: string[];
 }
 
-const Tabs = ({ title, menu, cards }: TabsInterface) => {
+const Tab = ({ title, menu, cards }: TabsInterface) => {
     return (
         <div className={classes.productsLayout}>
             <section className={classes.container}>
@@ -57,4 +57,4 @@ const Tabs = ({ title, menu, cards }: TabsInterface) => {
     );
 };
 
-export default Tabs;
+export default Tab;
