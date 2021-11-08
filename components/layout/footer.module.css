@@ -1,0 +1,39 @@
+.menuFooter {
+    text-align: center;
+    margin: 7rem 2rem;
+    margin-bottom: 0px;
+}
+
+.footerBtn {
+    font-size: 4rem;
+    font-family: 'Nord';
+    font-weight: bold;
+
+    letter-spacing: 0.3rem;
+    padding: 3rem 8rem;
+
+    background-color: var(--simmer-white);
+    color: var(--simmer-black);
+
+    border: 0.2rem solid black;
+    outline: none;
+    border-radius: 1rem;
+
+    margin-bottom: 5rem;
+}
+
+.footerParag {
+    margin-top: 2rem;
+    font-family: 'Nord';
+    font-weight: bold;
+}
+
+.description {
+    font-weight: bold;
+    font-size: 2rem;
+    grid-column: 1 / 2;
+}
+
+.description a {
+    color: black;
+}

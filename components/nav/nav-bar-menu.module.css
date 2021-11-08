@@ -12,6 +12,8 @@
 
     font-family: 'Nord';
     color: var(--simmer-white);
+
+    overflow: hidden;
 }
 
 .container {

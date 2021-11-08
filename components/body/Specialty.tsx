@@ -1,11 +1,12 @@
 import { NextPage } from 'next';
 import Star from '../Icon/Star';
+import Container from '../utils/Container';
 
 import classes from './specialty.module.css';
 
 const Specialty: NextPage = () => {
     return (
-        <>
+        <Container bgColor="#fa9a11">
             <div className={classes.container}>
                 <div className={classes.header}>Specialty</div>
                 <div className={classes.product}>
@@ -38,14 +39,7 @@ const Specialty: NextPage = () => {
                     <button className={classes.btn}>add to cart</button>
                 </div>
             </div>
-            <div className={classes.menuFooter}>
-                <button className={classes.footerBtn}>CHECKOUT</button>
-                <p className={`${classes.description} ${classes.footerParag}`}>
-                    for other concerns, feel free to email us at&nbsp;
-                    <a href="#">holla@simmer-studios.com</a>
-                </p>
-            </div>
-        </>
+        </Container>
     );
 };
 
