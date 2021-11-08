@@ -1,8 +1,8 @@
-import { NextPage } from 'next';
-
 import classes from './products.module.css';
 
-const Appetizers: NextPage = () => {
+const Appetizers = () => {
+    const arrayTitle = [];
+
     return (
         <div className={classes.productsLayout}>
             <section className={classes.container}>

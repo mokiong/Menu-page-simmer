@@ -1,4 +1,3 @@
-import type { NextPage } from 'next';
 import { useState } from 'react';
 
 import Appetizers from '../body/Appetizers';
@@ -7,7 +6,7 @@ import Container from '../utils/Container';
 
 import classes from './header.module.css';
 
-const MenuHeader: NextPage = () => {
+const MenuHeader = () => {
     const [chosenCourse, setChosenCourse] = useState<string>('appetizers');
 
     let Menu;

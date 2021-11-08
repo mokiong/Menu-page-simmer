@@ -1,9 +1,8 @@
-import { NextPage } from 'next';
 import Container from '../utils/Container';
 
 import classes from './footer.module.css';
 
-const Footer: NextPage = (props) => {
+const Footer = () => {
     return (
         <Container bgColor="#f7ede1">
             <div className={classes.menuFooter}>

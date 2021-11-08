@@ -1,10 +1,9 @@
-import { NextPage } from 'next';
 import Star from '../Icon/Star';
 import Container from '../utils/Container';
 
 import classes from './specialty.module.css';
 
-const Specialty: NextPage = () => {
+const Specialty = () => {
     return (
         <Container bgColor="#fa9a11">
             <div className={classes.container}>

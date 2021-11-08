@@ -1,8 +1,8 @@
 import { createPortal } from 'react-dom';
 import { useEffect, useRef, useState } from 'react';
-import { NextPage } from 'next';
+import { FC } from 'react';
 
-const NavBarMenu: NextPage = ({ children }) => {
+const NavBarMenu: FC = ({ children }) => {
     const [isBrowser, setIsBrowser] = useState(false);
 
     useEffect(() => {

@@ -1,11 +1,9 @@
-import { NextPage } from 'next';
-
-interface downArrowInterface {
+interface DownArrowInterface {
     size: string;
     color: string;
 }
 
-const DownArrow: NextPage<downArrowInterface> = ({ color, size }) => {
+const DownArrow = ({ color, size }: DownArrowInterface) => {
     return (
         <svg
             version="1.1"

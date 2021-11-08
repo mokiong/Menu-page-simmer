@@ -1,11 +1,11 @@
-import { NextPage } from 'next';
+import { FC } from 'react';
 
-interface starInterface {
+interface StarInterface {
     size: string;
     color: string;
 }
 
-const Star: NextPage<starInterface> = ({ size, color }) => {
+const Star: FC<StarInterface> = ({ size, color }) => {
     return (
         <svg
             version="1.1"

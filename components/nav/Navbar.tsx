@@ -1,4 +1,3 @@
-import { NextPage } from 'next';
 import { useState } from 'react';
 import { BsCart3 } from 'react-icons/bs';
 import { GiHamburgerMenu } from 'react-icons/gi';
@@ -9,7 +8,7 @@ import navMenuClasses from './nav-bar-menu.module.css';
 import classes from './nav-bar.module.css';
 import Container from '../utils/Container';
 
-const Navbar: NextPage = () => {
+const Navbar = () => {
     const [showNavBarMenu, setShowNavBarMenu] = useState(false);
 
     function navbarMenuHandler() {
