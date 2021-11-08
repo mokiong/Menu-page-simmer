@@ -1,6 +1,6 @@
 .container {
     background-color: var(--simmer-yellow);
-    padding: 10rem var(--global-padding);
+    padding: 8rem var(--global-padding);
 }
 
 .header {
@@ -9,6 +9,7 @@
 }
 
 .product {
+    margin: 0px 6rem;
     margin-top: 6rem;
 
     border: 0.3rem solid black;
