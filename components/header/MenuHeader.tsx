@@ -1,20 +1,36 @@
 import { useState } from 'react';
 
-import Appetizers from '../body/Appetizers';
+import Tabs from '../body/Tabs';
 import DownArrow from '../Icon/DownArrow';
 import Container from '../utils/Container';
 
 import classes from './header.module.css';
 
+const Cards = [
+    'Brand Identity',
+    'Brand Identity',
+    'Web Design',
+    'Digital Designs',
+    'Motion graphics',
+    'Web Development',
+    'Social Media Content/Campaign',
+    'Photo/Video',
+    'Print and Packaging',
+    'Brand research & story',
+    'Fashion design',
+    'mock-ups',
+];
+const TabItems = [
+    'Brand Messaging',
+    'Brand Story',
+    'Brand Research',
+    'Brand Strategy',
+    'Social Media',
+    'Copywriting',
+];
+
 const MenuHeader = () => {
-    const [chosenCourse, setChosenCourse] = useState<string>('appetizers');
-
-    let Menu;
-
-    switch (chosenCourse) {
-        case 'appetizers':
-            Menu = <Appetizers />;
-    }
+    const [chosenCourse, setChosenCourse] = useState<string>('Appetizers');
 
     return (
         <>
@@ -28,15 +44,15 @@ const MenuHeader = () => {
                     <div className={classes.tabs}>
                         <div className={classes.tabContainer}>
                             <div className={classes.icon}>
-                                {chosenCourse === 'appetizers' && (
+                                {chosenCourse === 'Appetizers' && (
                                     <DownArrow color="#f89811" size="3rem" />
                                 )}
                             </div>
-                            {chosenCourse === 'appetizers' ? (
+                            {chosenCourse === 'Appetizers' ? (
                                 <>
                                     <button
                                         onClick={() => {
-                                            setChosenCourse('appetizers');
+                                            setChosenCourse('Appetizers');
                                         }}
                                         className={`${classes.btn} ${classes.activeBtn}`}
                                     >
@@ -46,7 +62,7 @@ const MenuHeader = () => {
                             ) : (
                                 <button
                                     onClick={() => {
-                                        setChosenCourse('appetizers');
+                                        setChosenCourse('Appetizers');
                                     }}
                                     className={classes.btn}
                                 >
@@ -56,13 +72,13 @@ const MenuHeader = () => {
                         </div>
                         <div className={classes.tabContainer}>
                             <div className={classes.icon}>
-                                {chosenCourse === 'main' && (
+                                {chosenCourse === 'Main' && (
                                     <DownArrow color="#f89811" size="3rem" />
                                 )}
                             </div>
                             <button
                                 onClick={() => {
-                                    setChosenCourse('main');
+                                    setChosenCourse('Main');
                                 }}
                                 className={classes.btn}
                             >
@@ -71,13 +87,13 @@ const MenuHeader = () => {
                         </div>
                         <div className={classes.tabContainer}>
                             <div className={classes.icon}>
-                                {chosenCourse === 'dessert' && (
+                                {chosenCourse === 'Dessert' && (
                                     <DownArrow color="#f89811" size="3rem" />
                                 )}
                             </div>
                             <button
                                 onClick={() => {
-                                    setChosenCourse('dessert');
+                                    setChosenCourse('Dessert');
                                 }}
                                 className={classes.btn}
                             >
@@ -88,7 +104,9 @@ const MenuHeader = () => {
                 </div>
             </Container>
             <Container bgColor="#f7ede1">
-                <section>{Menu}</section>
+                <section>
+                    <Tabs title={chosenCourse} cards={Cards} menu={TabItems} />
+                </section>
             </Container>
         </>
     );
