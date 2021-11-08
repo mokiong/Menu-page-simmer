@@ -1,8 +1,10 @@
 import classes from './products.module.css';
 
-const Appetizers = () => {
-    const arrayTitle = [];
+interface AppetizersInterface {
+    cards: string[];
+}
 
+const Appetizers = ({ cards }: AppetizersInterface) => {
     return (
         <div className={classes.productsLayout}>
             <section className={classes.container}>

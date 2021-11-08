@@ -22,7 +22,7 @@ const MenuHeader = () => {
                 <div className={classes.container}>
                     <div className={classes.headerContainer}>
                         <h1 className={classes.headerText}>
-                            Tell us what you&apos;re craving
+                            Tell us what you&apos;re craving for.
                         </h1>
                     </div>
                     <div className={classes.tabs}>
