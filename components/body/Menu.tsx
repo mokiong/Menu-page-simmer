@@ -47,30 +47,6 @@ const Menu = () => {
                                 chosenCourse={chosenCourse}
                                 setChosenCourse={setChosenCourse}
                             />
-
-                            // <div className={classes.tabContainer} key={btn}>
-                            //     <div className={classes.tabSection}>
-                            //         <div className={classes.icon}>
-                            //             <DownArrow
-                            //                 color="#f89811"
-                            //                 size="3rem"
-                            //             />
-                            //         </div>
-
-                            //         <button
-                            //             onClick={() => {
-                            //                 setChosenCourse(btn);
-                            //             }}
-                            //             className={
-                            //                 chosenCourse === btn
-                            //                     ? `${classes.btn} ${classes.activeBtn}`
-                            //                     : `${classes.btn}`
-                            //             }
-                            //         >
-                            //             {btn}
-                            //         </button>
-                            //     </div>
-                            // </div>
                         ))}
                     </div>
                 </div>
