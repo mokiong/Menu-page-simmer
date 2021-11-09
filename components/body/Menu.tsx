@@ -53,8 +53,7 @@ const Menu = () => {
                                             setChosenCourse(btn);
                                         }}
                                         className={
-                                            chosenCourse === btn &&
-                                            btn === 'Appetizers'
+                                            chosenCourse === btn
                                                 ? `${classes.btn} ${classes.activeBtn}`
                                                 : `${classes.btn}`
                                         }
