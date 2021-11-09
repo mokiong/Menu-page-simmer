@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Tabs from './Tab';
+import Tab from './Tab';
 import DownArrow from '../Icon/DownArrow';
 import Container from '../utils/Container';
 
@@ -53,7 +53,7 @@ const Menu = () => {
                                             setChosenCourse(btn);
                                         }}
                                         className={
-                                            chosenCourse === 'Appetizers' &&
+                                            chosenCourse === btn &&
                                             btn === 'Appetizers'
                                                 ? `${classes.btn} ${classes.activeBtn}`
                                                 : `${classes.btn}`
@@ -69,7 +69,7 @@ const Menu = () => {
             </Container>
             <Container bgColor="#f7ede1">
                 <section>
-                    <Tabs title={chosenCourse} cards={Cards} menu={TabItems} />
+                    <Tab title={chosenCourse} cards={Cards} menu={TabItems} />
                 </section>
             </Container>
         </>
