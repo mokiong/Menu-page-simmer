@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import Tab from './Tab';
-import DownArrow from '../Icon/DownArrow';
+
 import Container from '../utils/Container';
+import Tab from './Tab';
+import TabButton from './TabButton';
 
 import classes from './menu.module.css';
 
@@ -19,6 +20,7 @@ const Cards = [
     'Fashion design',
     'mock-ups',
 ];
+
 const Services = [
     'Brand Messaging',
     'Brand Story',
@@ -39,29 +41,36 @@ const Menu = () => {
                 <div className={classes.container}>
                     <div className={classes.tabs}>
                         {buttons.map((btn) => (
-                            <div className={classes.tabContainer} key={btn}>
-                                <div className={classes.tabSection}>
-                                    <div className={classes.icon}>
-                                        <DownArrow
-                                            color="#f89811"
-                                            size="3rem"
-                                        />
-                                    </div>
+                            <TabButton
+                                key={btn}
+                                buttonContent={btn}
+                                chosenCourse={chosenCourse}
+                                setChosenCourse={setChosenCourse}
+                            />
 
-                                    <button
-                                        onClick={() => {
-                                            setChosenCourse(btn);
-                                        }}
-                                        className={
-                                            chosenCourse === btn
-                                                ? `${classes.btn} ${classes.activeBtn}`
-                                                : `${classes.btn}`
-                                        }
-                                    >
-                                        {btn}
-                                    </button>
-                                </div>
-                            </div>
+                            // <div className={classes.tabContainer} key={btn}>
+                            //     <div className={classes.tabSection}>
+                            //         <div className={classes.icon}>
+                            //             <DownArrow
+                            //                 color="#f89811"
+                            //                 size="3rem"
+                            //             />
+                            //         </div>
+
+                            //         <button
+                            //             onClick={() => {
+                            //                 setChosenCourse(btn);
+                            //             }}
+                            //             className={
+                            //                 chosenCourse === btn
+                            //                     ? `${classes.btn} ${classes.activeBtn}`
+                            //                     : `${classes.btn}`
+                            //             }
+                            //         >
+                            //             {btn}
+                            //         </button>
+                            //     </div>
+                            // </div>
                         ))}
                     </div>
                 </div>

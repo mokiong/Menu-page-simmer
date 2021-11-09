@@ -1,4 +1,4 @@
-import classes from './products.module.css';
+import classes from './tab.module.css';
 
 interface TabsInterface {
     title: string;
