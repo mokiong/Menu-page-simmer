@@ -19,7 +19,7 @@ const Cards = [
     'Fashion design',
     'mock-ups',
 ];
-const TabItems = [
+const Services = [
     'Brand Messaging',
     'Brand Story',
     'Brand Research',
@@ -69,7 +69,7 @@ const Menu = () => {
             </Container>
             <Container bgColor="#f7ede1">
                 <section>
-                    <Tab title={chosenCourse} cards={Cards} menu={TabItems} />
+                    <Tab title={chosenCourse} cards={Cards} menu={Services} />
                 </section>
             </Container>
         </>
